@@ -12,6 +12,7 @@ Welcome to note's documentation!
    :numbered:
 
    language/perl
+   network/network
 
 
 
