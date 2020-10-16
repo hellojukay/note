@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>1. Perl &#8212; note v0.1.0 文档</title>
+    <title>2. 网络 &#8212; note v0.1.0 文档</title>
     <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -16,8 +16,7 @@
     <script src="../_static/translations.js"></script>
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="搜索" href="../search.html" />
-    <link rel="next" title="2. 网络" href="../network/network.html" />
-    <link rel="prev" title="Welcome to note’s documentation!" href="../index.html" />
+    <link rel="prev" title="1. Perl" href="../language/perl.html" />
    
   <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
   
@@ -34,17 +33,14 @@
 
           <div class="body" role="main">
             
-  <div class="section" id="perl">
-<h1><span class="section-number">1. </span>Perl<a class="headerlink" href="#perl" title="永久链接至标题">¶</a></h1>
-<div class="section" id="one-liner">
-<h2><span class="section-number">1.1. </span>One Liner<a class="headerlink" href="#one-liner" title="永久链接至标题">¶</a></h2>
-<div class="section" id="id1">
-<h3><span class="section-number">1.1.1. </span>处理空行<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h3>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>perl -i  -n  -e <span class="s1">&#39;print if /\S/&#39;</span> file
-</pre></div>
-</div>
-<p>等价于 <code class="docutils literal notranslate"><span class="pre">awk</span></code></p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sed -i  <span class="s1">&#39;/^$/d&#39;</span> file
+  <div class="section" id="id1">
+<h1><span class="section-number">2. </span>网络<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
+<div class="section" id="dns">
+<h2><span class="section-number">2.1. </span>DNS<a class="headerlink" href="#dns" title="永久链接至标题">¶</a></h2>
+<div class="section" id="http-dns">
+<h3><span class="section-number">2.1.1. </span>http dns<a class="headerlink" href="#http-dns" title="永久链接至标题">¶</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># 网络需要设置代理</span>
+hellojukay@local alacritty $  curl -s -H <span class="s1">&#39;accept: application/dns+json&#39;</span> <span class="s1">&#39;https://dns.google.com/resolve?name=www.baidu.com&amp;type=A&#39;</span>
 </pre></div>
 </div>
 </div>
@@ -70,19 +66,18 @@
 <h3>导航</h3>
 <p class="caption"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">1. Perl</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#one-liner">1.1. One Liner</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../language/perl.html">1. Perl</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">2. 网络</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#dns">2.1. DNS</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../network/network.html">2. 网络</a></li>
 </ul>
 
 <div class="relations">
 <h3>Related Topics</h3>
 <ul>
   <li><a href="../index.html">Documentation overview</a><ul>
-      <li>Previous: <a href="../index.html" title="上一章">Welcome to note’s documentation!</a></li>
-      <li>Next: <a href="../network/network.html" title="下一章"><span class="section-number">2. </span>网络</a></li>
+      <li>Previous: <a href="../language/perl.html" title="上一章"><span class="section-number">1. </span>Perl</a></li>
   </ul></li>
 </ul>
 </div>
@@ -116,7 +111,7 @@
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |
-      <a href="../_sources/language/perl.md.txt"
+      <a href="../_sources/network/network.md.txt"
           rel="nofollow">Page source</a>
     </div>
 
