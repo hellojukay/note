@@ -14,6 +14,7 @@ Welcome to note's documentation!
    language/perl
    network/network
    linux/linux
+   linux/vim
 
 
 
