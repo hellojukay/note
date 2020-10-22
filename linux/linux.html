@@ -81,6 +81,21 @@
 </pre></div>
 </div>
 </div>
+<div class="section" id="ld-library-path">
+<h2><span class="section-number">3.3. </span>LD_LIBRARY_PATH<a class="headerlink" href="#ld-library-path" title="永久链接至标题">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">Linux</span></code> 下通过 <code class="docutils literal notranslate"><span class="pre">LD_LIBRARY_PATH</span></code> 环境变量来加载自定义的 <code class="docutils literal notranslate"><span class="pre">so</span></code> 文件，</p>
+</div>
+<div class="section" id="env">
+<h2><span class="section-number">3.4. </span>env<a class="headerlink" href="#env" title="永久链接至标题">¶</a></h2>
+<p>清空环境变量来执行一条命令</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>env -i &lt;your command&gt;
+</pre></div>
+</div>
+<p>设置环境变量来执行一条命令</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>env <span class="nv">a</span><span class="o">=</span>xxx <span class="nv">b</span><span class="o">=</span>yyy &lt;your command&gt;
+</pre></div>
+</div>
+</div>
 </div>
 
 
@@ -107,6 +122,8 @@
 <li class="toctree-l1 current"><a class="current reference internal" href="#">3. Linux</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#envsubst">3.1. envsubst</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#when-changed">3.2. when-changed</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ld-library-path">3.3. LD_LIBRARY_PATH</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#env">3.4. env</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="vim.html">4. vim</a></li>
