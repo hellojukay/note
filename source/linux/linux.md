@@ -42,4 +42,14 @@ when-changed <dir or files> -c <your command>
 ```
 https://gaopinghuang0.github.io/2018/05/23/when-changed-usage
 ```
-
+## LD_LIBRARY_PATH
+`Linux` 下通过 `LD_LIBRARY_PATH` 环境变量来加载自定义的 `so` 文件，
+## env
+清空环境变量来执行一条命令
+```bash
+env -i <your command>
+```
+设置环境变量来执行一条命令
+```bash
+env a=xxx b=yyy <your command>
+```
