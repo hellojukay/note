@@ -58,3 +58,9 @@ env a=xxx b=yyy <your command>
 # 执行的命令只有一个环境变量
 env -i a=xxx <your command>
 ```
+## linux 下静态编译的工具集合
+```
+1. https://github.com/static-linux/static-binaries-i386
+2. https://github.com/ZephrFish/static-tools
+3. https://github.com/yunchih/static-binaries
+```
