@@ -24,7 +24,7 @@ author = 'hellojukay'
 # The full version, including alpha/beta/rc tags
 release = 'v0.1.0'
 
-html_baseurl="note.hellojukay.cn"
+html_baseurl="https://note.hellojukay.cn"
 
 
 # -- General configuration ---------------------------------------------------
