@@ -15,6 +15,7 @@ Welcome to note's documentation!
    network/network
    linux/linux
    linux/vim
+   ci/gitlab-ci
 
 
 
