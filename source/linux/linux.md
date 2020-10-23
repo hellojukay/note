@@ -53,3 +53,8 @@ env -i <your command>
 ```bash
 env a=xxx b=yyy <your command>
 ```
+也可以混着写
+```bash
+# 执行的命令只有一个环境变量
+env -i a=xxx <your command>
+```
