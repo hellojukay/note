@@ -109,6 +109,21 @@ env -i <span class="nv">a</span><span class="o">=</span>xxx &lt;your command&gt;
 </pre></div>
 </div>
 </div>
+<div class="section" id="rpm">
+<h2><span class="section-number">3.6. </span>rpm 相关<a class="headerlink" href="#rpm" title="永久链接至标题">¶</a></h2>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>rpmbuild -ba <span class="c1"># 打包二进制包和源码包</span>
+rpmbuild -bb <span class="c1"># 只打包二进制包</span>
+</pre></div>
+</div>
+<p>rpmbuild 设置 <code class="docutils literal notranslate"><span class="pre">_topdir</span></code>:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>rpmbuild -bb package.spec  --define <span class="s2">&quot;_topdir /tmp/rpmbuild&quot;</span>
+</pre></div>
+</div>
+<p>rpmbuild 传递变量值</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>rpmbuild -bb package.spec --define <span class="s2">&quot;version v1.0.1&quot;</span>
+</pre></div>
+</div>
+</div>
 </div>
 
 
@@ -138,6 +153,7 @@ env -i <span class="nv">a</span><span class="o">=</span>xxx &lt;your command&gt;
 <li class="toctree-l2"><a class="reference internal" href="#ld-library-path">3.3. LD_LIBRARY_PATH</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#env">3.4. env</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#id1">3.5. linux 下静态编译的工具集合</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#rpm">3.6. rpm 相关</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="vim.html">4. vim</a></li>

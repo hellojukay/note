@@ -64,3 +64,18 @@ env -i a=xxx <your command>
 2. https://github.com/ZephrFish/static-tools
 3. https://github.com/yunchih/static-binaries
 ```
+
+## rpm 相关
+```bash
+rpmbuild -ba # 打包二进制包和源码包
+rpmbuild -bb # 只打包二进制包
+```
+rpmbuild 设置 `_topdir`:
+```bash
+rpmbuild -bb package.spec  --define "_topdir /tmp/rpmbuild"
+```
+rpmbuild 传递变量值
+```bash
+rpmbuild -bb package.spec --define "version v1.0.1"
+```
+
