@@ -78,4 +78,9 @@ rpmbuild 传递变量值
 ```bash
 rpmbuild -bb package.spec --define "version v1.0.1"
 ```
-
+### 下载 youtube 视频
+项目地址：
+```
+https://github.com/kkdai/youtube
+```
+不限于 `Linux`系统，`Windows` 和 `Mac OSX` 也都是支持的。
