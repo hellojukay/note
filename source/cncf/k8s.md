@@ -1,4 +1,13 @@
 # K8S
+## containerd
+### 获取镜像
+```bash
+sudo ctr image pull <image>
+```
+### 镜像代理加速
+```bash
+sudo ctr image pull registry.aliyuncs.com/<image>
+```
 ## K3S
 ### 官方网站
 https://docs.rancher.cn/
@@ -23,3 +32,5 @@ k3s kubectl get ns
 ```bash
 k3s kubectl get pods
 ```
+
+
