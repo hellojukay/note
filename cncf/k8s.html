@@ -1,0 +1,167 @@
+
+<!DOCTYPE html>
+
+<html lang="zh_CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>6. K8S &#8212; note v0.1.0 文档</title>
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <script src="../_static/translations.js"></script>
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="prev" title="5. Gitlab Pipeline" href="../ci/gitlab-ci.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="k8s">
+<h1><span class="section-number">6. </span>K8S<a class="headerlink" href="#k8s" title="永久链接至标题">¶</a></h1>
+<div class="section" id="containerd">
+<h2><span class="section-number">6.1. </span>containerd<a class="headerlink" href="#containerd" title="永久链接至标题">¶</a></h2>
+<div class="section" id="id1">
+<h3><span class="section-number">6.1.1. </span>获取镜像<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo ctr image pull &lt;image&gt;
+</pre></div>
+</div>
+</div>
+<div class="section" id="id2">
+<h3><span class="section-number">6.1.2. </span>镜像代理加速<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo ctr image pull registry.aliyuncs.com/&lt;image&gt;
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="k3s">
+<h2><span class="section-number">6.2. </span>K3S<a class="headerlink" href="#k3s" title="永久链接至标题">¶</a></h2>
+<div class="section" id="id3">
+<h3><span class="section-number">6.2.1. </span>官方网站<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h3>
+<p>https://docs.rancher.cn/</p>
+</div>
+<div class="section" id="id4">
+<h3><span class="section-number">6.2.2. </span>安装脚本<a class="headerlink" href="#id4" title="永久链接至标题">¶</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>curl -sfL https://get.k3s.io <span class="p">|</span> sh -
+</pre></div>
+</div>
+<p>国内用户用下面这种安装方式:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>curl -sfL http://rancher-mirror.cnrancher.com/k3s/k3s-install.sh <span class="p">|</span> <span class="nv">INSTALL_K3S_MIRROR</span><span class="o">=</span>cn sh -
+</pre></div>
+</div>
+</div>
+<div class="section" id="id5">
+<h3><span class="section-number">6.2.3. </span>获取节点<a class="headerlink" href="#id5" title="永久链接至标题">¶</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>k3s kubectl get nodes
+</pre></div>
+</div>
+</div>
+<div class="section" id="id6">
+<h3><span class="section-number">6.2.4. </span>查看命名空间<a class="headerlink" href="#id6" title="永久链接至标题">¶</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>k3s kubectl get ns
+</pre></div>
+</div>
+</div>
+<div class="section" id="pod">
+<h3><span class="section-number">6.2.5. </span>查看 pod<a class="headerlink" href="#pod" title="永久链接至标题">¶</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>k3s kubectl get pods
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">note</a></h1>
+
+
+
+
+
+
+
+
+<h3>导航</h3>
+<p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../language/perl.html">1. Perl</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../network/network.html">2. 网络</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../linux/linux.html">3. Linux</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../linux/vim.html">4. vim</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ci/gitlab-ci.html">5. Gitlab Pipeline</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">6. K8S</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#containerd">6.1. containerd</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#k3s">6.2. K3S</a></li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="../ci/gitlab-ci.html" title="上一章"><span class="section-number">5. </span>Gitlab Pipeline</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">快速搜索</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="转向" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, hellojukay.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.2.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/cncf/k8s.md.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
