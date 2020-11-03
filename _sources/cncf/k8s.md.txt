@@ -4,10 +4,17 @@
 ```bash
 sudo ctr image pull <image>
 ```
+
 ### 镜像代理加速
 ```bash
 sudo ctr image pull registry.aliyuncs.com/<image>
 ```
+
+### 重命名镜像
+```bash
+sudo ctrl image tag <image1> <image2>
+```
+
 ## K3S
 ### 官方网站
 https://docs.rancher.cn/
@@ -20,14 +27,17 @@ curl -sfL https://get.k3s.io | sh -
 ```bash
 curl -sfL http://rancher-mirror.cnrancher.com/k3s/k3s-install.sh | INSTALL_K3S_MIRROR=cn sh -
 ```
+
 ### 获取节点
 ```bash
 k3s kubectl get nodes
 ```
+
 ### 查看命名空间
 ```bash
 k3s kubectl get ns
 ```
+
 ### 查看 pod
 ```bash
 k3s kubectl get pods
