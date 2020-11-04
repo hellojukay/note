@@ -17,6 +17,7 @@ Welcome to note's documentation!
    linux/vim
    ci/gitlab-ci
    tools/tools
+   cncf/k8s
 
 
 
