@@ -97,6 +97,10 @@
 </div>
 </div>
 </div>
+<div class="section" id="deployment">
+<h2><span class="section-number">7.3. </span>deployment<a class="headerlink" href="#deployment" title="永久链接至标题">¶</a></h2>
+<p>K8S 通过创建 <code class="docutils literal notranslate"><span class="pre">Deployment</span></code> 对象来管理 <code class="docutils literal notranslate"><span class="pre">Pod</span></code> ， 但是在实际上部署的底层过程中是通过创建 <code class="docutils literal notranslate"><span class="pre">ReplicaSet</span></code> 来控制新老副本的数量，比如说升级应用，会新创建一个新的 <code class="docutils literal notranslate"><span class="pre">ReplicaSet</span></code> 控制新的 <code class="docutils literal notranslate"><span class="pre">ReplicaSet</span></code> 和 老的 <code class="docutils literal notranslate"><span class="pre">ReplicaSet</span></code> 的 <code class="docutils literal notranslate"><span class="pre">Pod</span></code> 数量来控制新老副本的的数量，从而实现滚动发布。</p>
+</div>
 </div>
 
 
@@ -127,6 +131,7 @@
 <li class="toctree-l1 current"><a class="current reference internal" href="#">7. K8S</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#containerd">7.1. containerd</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#k3s">7.2. K3S</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#deployment">7.3. deployment</a></li>
 </ul>
 </li>
 </ul>
