@@ -84,3 +84,10 @@ rpmbuild -bb package.spec --define "version v1.0.1"
 https://github.com/kkdai/youtube
 ```
 不限于 `Linux`系统，`Windows` 和 `Mac OSX` 也都是支持的。
+
+## rsync 同步数据
+从网上同步数据到本地
+```bash
+# 同步网易的 centos repo
+rsync -avrt --delete rsync://mirrors.163.com/centos/7/extras/x86_64/Packages/ /tem/rpms/extras
+```
