@@ -132,6 +132,14 @@ rpmbuild -bb <span class="c1"># 只打包二进制包</span>
 </div>
 <p>不限于 <code class="docutils literal notranslate"><span class="pre">Linux</span></code>系统，<code class="docutils literal notranslate"><span class="pre">Windows</span></code> 和 <code class="docutils literal notranslate"><span class="pre">Mac</span> <span class="pre">OSX</span></code> 也都是支持的。</p>
 </div>
+<div class="section" id="rsync">
+<h2><span class="section-number">3.8. </span>rsync 同步数据<a class="headerlink" href="#rsync" title="永久链接至标题">¶</a></h2>
+<p>从网上同步数据到本地</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># 同步网易的 centos repo</span>
+rsync -avrt --delete rsync://mirrors.163.com/centos/7/extras/x86_64/Packages/ /tem/rpms/extras
+</pre></div>
+</div>
+</div>
 </div>
 
 
@@ -163,6 +171,7 @@ rpmbuild -bb <span class="c1"># 只打包二进制包</span>
 <li class="toctree-l2"><a class="reference internal" href="#id1">3.5. linux 下静态编译的工具集合</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#rpm">3.6. rpm 相关</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#youtube">3.7. 下载 youtube 视频</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#rsync">3.8. rsync 同步数据</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="vim.html">4. vim</a></li>
