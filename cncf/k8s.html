@@ -101,6 +101,15 @@
 <h2><span class="section-number">7.3. </span>deployment<a class="headerlink" href="#deployment" title="永久链接至标题">¶</a></h2>
 <p>K8S 通过创建 <code class="docutils literal notranslate"><span class="pre">Deployment</span></code> 对象来管理 <code class="docutils literal notranslate"><span class="pre">Pod</span></code> ， 但是在实际上部署的底层过程中是通过创建 <code class="docutils literal notranslate"><span class="pre">ReplicaSet</span></code> 来控制新老副本的数量，比如说升级应用，会新创建一个新的 <code class="docutils literal notranslate"><span class="pre">ReplicaSet</span></code> 控制新的 <code class="docutils literal notranslate"><span class="pre">ReplicaSet</span></code> 和 老的 <code class="docutils literal notranslate"><span class="pre">ReplicaSet</span></code> 的 <code class="docutils literal notranslate"><span class="pre">Pod</span></code> 数量来控制新老副本的的数量，从而实现滚动发布。</p>
 </div>
+<div class="section" id="docker">
+<h2><span class="section-number">7.4. </span>docker<a class="headerlink" href="#docker" title="永久链接至标题">¶</a></h2>
+<div class="section" id="id9">
+<h3><span class="section-number">7.4.1. </span>离线安装<a class="headerlink" href="#id9" title="永久链接至标题">¶</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">download</span><span class="o">.</span><span class="n">docker</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">linux</span><span class="o">/</span><span class="n">static</span><span class="o">/</span><span class="n">stable</span><span class="o">/</span><span class="n">x86_64</span><span class="o">/</span>
+</pre></div>
+</div>
+</div>
+</div>
 </div>
 
 
@@ -132,6 +141,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#containerd">7.1. containerd</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#k3s">7.2. K3S</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#deployment">7.3. deployment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#docker">7.4. docker</a></li>
 </ul>
 </li>
 </ul>
