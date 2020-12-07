@@ -50,3 +50,8 @@ k3s kubectl get pods
 
 ## deployment
 K8S 通过创建 `Deployment` 对象来管理 `Pod` ， 但是在实际上部署的底层过程中是通过创建 `ReplicaSet` 来控制新老副本的数量，比如说升级应用，会新创建一个新的 `ReplicaSet` 控制新的 `ReplicaSet` 和 老的 `ReplicaSet` 的 `Pod` 数量来控制新老副本的的数量，从而实现滚动发布。
+## docker
+### 离线安装
+```
+https://download.docker.com/linux/static/stable/x86_64/
+```
